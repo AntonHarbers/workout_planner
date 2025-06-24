@@ -3,10 +3,13 @@ import { getDataFromLS } from './lib/localStorage'
 import NewWorkoutForm from './components/NewWorkoutForm'
 import WorkoutTable from './components/WorkoutTable'
 import { containerStyle, emptyDataTextStyle, headerStyle, todaysWorkoutContainerStyle } from './lib/styles'
+import { useDebounce } from 'use-debounce';
 
 function App() {
   const [workoutData, setWorkoutData] = useState(getDataFromLS())
-  useEffect(() => localStorage.setItem('workout-plan-data', JSON.stringify(workoutData)), [workoutData])
+  const [debouncedWorkoutData] = useDebounce(workoutData, 500) // 500ms debounce
+
+  useEffect(() => localStorage.setItem('workout-plan-data', JSON.stringify(debouncedWorkoutData)), [debouncedWorkoutData])
 
   const todaysWorkouts: Array<string> = useMemo(() => {
     const idx = new Date().getDay()
