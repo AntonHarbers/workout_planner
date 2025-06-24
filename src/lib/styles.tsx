@@ -1,0 +1,11 @@
+export const containerStyle = "bg-slate-300 h-screen w-screen items-center justify-center py-20 select-none"
+export const headerStyle = "text-slate-50 text-6xl font-bold text-shadow-emerald-400 text-shadow-sm text-center"
+export const emptyDataTextStyle = "w-full m-auto text-center my-20 text-2xl"
+export const rowContainerStyle = 'm-auto grid-cols-9 grid w-[1200px] items-center'
+export const rowNameStyle = 'border border-black text-center'
+export const rowDeleteContainerStyle = "w-full border border-b text-center"
+export const rowDeleteButtonStyle = "hover:scale-110 active:scale-90 transition-all duration-75"
+export const tableContainerStyle = "m-auto grid-cols-9 grid w-[1200px] items-center justify-center text-center"
+export const formContainerStyle = "m-auto flex items-center w-full justify-center my-10 flex-col gap-4"
+export const formInputStyle = "border-2 border-white rounded-md focus:border-green-400 outline-none p-2 mx-2 text-center"
+export const formButtonStyle = "cursor-pointer bg-slate-500 px-4 py-2 rounded-md text-white hover:bg-slate-700 active:bg-slate-300"
