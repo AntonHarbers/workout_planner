@@ -19,4 +19,4 @@ export const dummyData: Array<WorkoutType> = [
     }
 ]
 
-export const tableHeaders = ["Workout", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "Delete"]
+export const tableHeaders = ["Workout", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Delete"]

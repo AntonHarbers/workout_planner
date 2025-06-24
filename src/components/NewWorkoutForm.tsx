@@ -11,7 +11,7 @@ export default function NewWorkoutForm({ setWorkoutData }: { setWorkoutData: Rea
         setNewWorkOutNameInput("")
     }
     return (
-        <form className={formContainerStyle}>
+        <form className={formContainerStyle} onSubmit={addNewWorkout}>
             <input
                 className={formInputStyle}
                 type="text"

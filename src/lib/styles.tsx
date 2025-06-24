@@ -9,3 +9,4 @@ export const tableContainerStyle = "m-auto grid-cols-9 grid w-[1200px] items-cen
 export const formContainerStyle = "m-auto flex items-center w-full justify-center my-10 flex-col gap-4"
 export const formInputStyle = "border-2 border-white rounded-md focus:border-green-400 outline-none p-2 mx-2 text-center"
 export const formButtonStyle = "cursor-pointer bg-slate-500 px-4 py-2 rounded-md text-white hover:bg-slate-700 active:bg-slate-300"
+export const todaysWorkoutContainerStyle = "flex gap-2 m-auto text-center justify-center my-10 mt-16 text-2xl"
